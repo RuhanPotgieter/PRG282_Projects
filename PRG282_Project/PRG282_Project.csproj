@@ -61,6 +61,24 @@
     <Compile Include="Presentation Layer\Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation Layer\messageboxlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\messageboxlogin.Designer.cs">
+      <DependentUpon>messageboxlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\messageboxregister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\messageboxregister.Designer.cs">
+      <DependentUpon>messageboxregister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\messageboxstudentadded.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\messageboxstudentadded.Designer.cs">
+      <DependentUpon>messageboxstudentadded.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Presentation Layer\Register.cs">
       <SubType>Form</SubType>
