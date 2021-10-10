@@ -40,6 +40,8 @@ namespace PRG282_Project.Presentation_Layer
             this.pb_Pass = new System.Windows.Forms.PictureBox();
             this.pb_User = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.confirmpanel = new System.Windows.Forms.Panel();
+            this.txt_passwordconform = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Email)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Pass)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_User)).BeginInit();
@@ -73,6 +75,7 @@ namespace PRG282_Project.Presentation_Layer
             this.txt_Password.Size = new System.Drawing.Size(200, 15);
             this.txt_Password.TabIndex = 12;
             this.txt_Password.Text = "Password";
+            this.txt_Password.Click += new System.EventHandler(this.txt_Password_Click);
             // 
             // txt_UserName
             // 
@@ -86,11 +89,12 @@ namespace PRG282_Project.Presentation_Layer
             this.txt_UserName.Size = new System.Drawing.Size(200, 16);
             this.txt_UserName.TabIndex = 11;
             this.txt_UserName.Text = "Username";
+            this.txt_UserName.Click += new System.EventHandler(this.txt_UserName_Click);
             // 
             // emailpanel
             // 
             this.emailpanel.BackColor = System.Drawing.Color.White;
-            this.emailpanel.Location = new System.Drawing.Point(87, 319);
+            this.emailpanel.Location = new System.Drawing.Point(87, 384);
             this.emailpanel.Name = "emailpanel";
             this.emailpanel.Size = new System.Drawing.Size(200, 1);
             this.emailpanel.TabIndex = 18;
@@ -101,11 +105,12 @@ namespace PRG282_Project.Presentation_Layer
             this.txt_Email.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_Email.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Email.ForeColor = System.Drawing.Color.White;
-            this.txt_Email.Location = new System.Drawing.Point(87, 298);
+            this.txt_Email.Location = new System.Drawing.Point(87, 363);
             this.txt_Email.Name = "txt_Email";
             this.txt_Email.Size = new System.Drawing.Size(200, 15);
             this.txt_Email.TabIndex = 17;
             this.txt_Email.Text = "Email";
+            this.txt_Email.Click += new System.EventHandler(this.txt_Email_Click);
             // 
             // button2
             // 
@@ -113,7 +118,7 @@ namespace PRG282_Project.Presentation_Layer
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.button2.Location = new System.Drawing.Point(44, 356);
+            this.button2.Location = new System.Drawing.Point(44, 421);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(243, 31);
             this.button2.TabIndex = 20;
@@ -124,7 +129,7 @@ namespace PRG282_Project.Presentation_Layer
             // 
             this.pb_Email.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pb_Email.Image = global::PRG282_Project.Properties.Resources.email1;
-            this.pb_Email.Location = new System.Drawing.Point(30, 297);
+            this.pb_Email.Location = new System.Drawing.Point(30, 362);
             this.pb_Email.Name = "pb_Email";
             this.pb_Email.Size = new System.Drawing.Size(30, 25);
             this.pb_Email.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -162,12 +167,35 @@ namespace PRG282_Project.Presentation_Layer
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // confirmpanel
+            // 
+            this.confirmpanel.BackColor = System.Drawing.Color.White;
+            this.confirmpanel.Location = new System.Drawing.Point(87, 324);
+            this.confirmpanel.Name = "confirmpanel";
+            this.confirmpanel.Size = new System.Drawing.Size(200, 1);
+            this.confirmpanel.TabIndex = 16;
+            // 
+            // txt_passwordconform
+            // 
+            this.txt_passwordconform.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.txt_passwordconform.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_passwordconform.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_passwordconform.ForeColor = System.Drawing.Color.White;
+            this.txt_passwordconform.Location = new System.Drawing.Point(87, 303);
+            this.txt_passwordconform.Name = "txt_passwordconform";
+            this.txt_passwordconform.Size = new System.Drawing.Size(200, 15);
+            this.txt_passwordconform.TabIndex = 15;
+            this.txt_passwordconform.Text = "Confirm Password";
+            this.txt_passwordconform.Click += new System.EventHandler(this.txt_passwordconform_Click);
+            // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.ClientSize = new System.Drawing.Size(319, 450);
+            this.ClientSize = new System.Drawing.Size(319, 478);
+            this.Controls.Add(this.confirmpanel);
+            this.Controls.Add(this.txt_passwordconform);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.pb_Email);
             this.Controls.Add(this.emailpanel);
@@ -206,5 +234,7 @@ namespace PRG282_Project.Presentation_Layer
         private System.Windows.Forms.Panel emailpanel;
         private System.Windows.Forms.TextBox txt_Email;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Panel confirmpanel;
+        private System.Windows.Forms.TextBox txt_passwordconform;
     }
 }

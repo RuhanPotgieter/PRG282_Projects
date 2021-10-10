@@ -34,7 +34,7 @@ namespace PRG282_Project.Presentation_Layer
             this.userpanel = new System.Windows.Forms.Panel();
             this.paswordpanel = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn_RegisterForm = new System.Windows.Forms.Button();
             this.pb_Pass = new System.Windows.Forms.PictureBox();
             this.pb_User = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -99,17 +99,18 @@ namespace PRG282_Project.Presentation_Layer
             this.button1.Text = "Login";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btn_RegisterForm
             // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(43, 385);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(243, 31);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Register";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_RegisterForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_RegisterForm.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_RegisterForm.ForeColor = System.Drawing.Color.White;
+            this.btn_RegisterForm.Location = new System.Drawing.Point(43, 385);
+            this.btn_RegisterForm.Name = "btn_RegisterForm";
+            this.btn_RegisterForm.Size = new System.Drawing.Size(243, 31);
+            this.btn_RegisterForm.TabIndex = 8;
+            this.btn_RegisterForm.Text = "Register";
+            this.btn_RegisterForm.UseVisualStyleBackColor = true;
+            this.btn_RegisterForm.Click += new System.EventHandler(this.btn_RegisterForm_Click);
             // 
             // pb_Pass
             // 
@@ -150,7 +151,7 @@ namespace PRG282_Project.Presentation_Layer
             this.ClientSize = new System.Drawing.Size(345, 467);
             this.Controls.Add(this.pb_Pass);
             this.Controls.Add(this.pb_User);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btn_RegisterForm);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.paswordpanel);
             this.Controls.Add(this.userpanel);
@@ -178,7 +179,7 @@ namespace PRG282_Project.Presentation_Layer
         private System.Windows.Forms.Panel userpanel;
         private System.Windows.Forms.Panel paswordpanel;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_RegisterForm;
         private System.Windows.Forms.PictureBox pb_User;
         private System.Windows.Forms.PictureBox pb_Pass;
     }

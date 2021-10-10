@@ -42,5 +42,13 @@ namespace PRG282_Project.Presentation_Layer
             userpanel.BackColor = Color.White;
             txt_UserName.ForeColor = Color.White;
         }
+
+        private void btn_RegisterForm_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Register reg2 = new Register();
+            reg2.FormClosed += (s, args) => this.Close();
+            reg2.Show();
+        }
     }
 }
