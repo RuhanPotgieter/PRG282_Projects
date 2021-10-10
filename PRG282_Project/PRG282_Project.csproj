@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessLogic layer\DataHandler.cs" />
+    <Compile Include="BusinessLogic layer\Exception.cs" />
     <Compile Include="BusinessLogic layer\FileHandler.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +94,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation Layer\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\messageboxlogin.resx">
+      <DependentUpon>messageboxlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\messageboxregister.resx">
+      <DependentUpon>messageboxregister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\messageboxstudentadded.resx">
+      <DependentUpon>messageboxstudentadded.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation Layer\Register.resx">
       <DependentUpon>Register.cs</DependentUpon>

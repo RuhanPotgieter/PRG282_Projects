@@ -11,18 +11,15 @@ namespace PRG282_Project.BusinessLogic_layer
     {
         public static void Read()
         {
-            Presentation_Layer.Register re = new Presentation_Layer.Register();
-            StreamReader sr = new StreamReader(@"logininfo.txt");
-            string olddata = sr.ReadLine();
-            sr.Close();
-            string[] data = new string[2];
-            data[0] = re.txt_UserName.Text;
-            data[1] = re.txt_Password.Text;
-            StreamWriter sw = new StreamWriter(@"logininfo.txt");
-            sw.WriteLine(olddata + (Environment.NewLine) + "Username=" + data[0] + " ,Password=" + data[1]);
+            try
+            {
 
-            sw.Close();
+            }
+            catch (Exception)
+            {
 
+                throw;
+            }
 
         }
 
