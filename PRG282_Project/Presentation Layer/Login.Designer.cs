@@ -33,7 +33,7 @@ namespace PRG282_Project.Presentation_Layer
             this.txt_Password = new System.Windows.Forms.TextBox();
             this.userpanel = new System.Windows.Forms.Panel();
             this.paswordpanel = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_Login = new System.Windows.Forms.Button();
             this.btn_RegisterForm = new System.Windows.Forms.Button();
             this.pb_Pass = new System.Windows.Forms.PictureBox();
             this.pb_User = new System.Windows.Forms.PictureBox();
@@ -86,18 +86,19 @@ namespace PRG282_Project.Presentation_Layer
             this.paswordpanel.Size = new System.Drawing.Size(200, 1);
             this.paswordpanel.TabIndex = 6;
             // 
-            // button1
+            // btn_Login
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(101)))), ((int)(((byte)(74)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial", 12F);
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.button1.Location = new System.Drawing.Point(43, 348);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(243, 31);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Login";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn_Login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(101)))), ((int)(((byte)(74)))));
+            this.btn_Login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Login.Font = new System.Drawing.Font("Arial", 12F);
+            this.btn_Login.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btn_Login.Location = new System.Drawing.Point(43, 348);
+            this.btn_Login.Name = "btn_Login";
+            this.btn_Login.Size = new System.Drawing.Size(243, 31);
+            this.btn_Login.TabIndex = 7;
+            this.btn_Login.Text = "Login";
+            this.btn_Login.UseVisualStyleBackColor = false;
+            this.btn_Login.Click += new System.EventHandler(this.btn_Login_Click);
             // 
             // btn_RegisterForm
             // 
@@ -152,7 +153,7 @@ namespace PRG282_Project.Presentation_Layer
             this.Controls.Add(this.pb_Pass);
             this.Controls.Add(this.pb_User);
             this.Controls.Add(this.btn_RegisterForm);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_Login);
             this.Controls.Add(this.paswordpanel);
             this.Controls.Add(this.userpanel);
             this.Controls.Add(this.txt_Password);
@@ -178,7 +179,7 @@ namespace PRG282_Project.Presentation_Layer
         private System.Windows.Forms.TextBox txt_Password;
         private System.Windows.Forms.Panel userpanel;
         private System.Windows.Forms.Panel paswordpanel;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_Login;
         private System.Windows.Forms.Button btn_RegisterForm;
         private System.Windows.Forms.PictureBox pb_User;
         private System.Windows.Forms.PictureBox pb_Pass;

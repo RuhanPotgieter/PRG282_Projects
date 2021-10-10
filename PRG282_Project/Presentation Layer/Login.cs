@@ -50,5 +50,10 @@ namespace PRG282_Project.Presentation_Layer
             reg2.FormClosed += (s, args) => this.Close();
             reg2.Show();
         }
+
+        private void btn_Login_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
