@@ -58,6 +58,12 @@
     <Compile Include="Presentation Layer\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation Layer\AddStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\AddStudent.Designer.cs">
+      <DependentUpon>AddStudent.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation Layer\Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +94,12 @@
     <Compile Include="Presentation Layer\Studenterror.Designer.cs">
       <DependentUpon>Studenterror.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation Layer\StudentSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\StudentSearch.Designer.cs">
+      <DependentUpon>StudentSearch.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Presentation Layer\Register.cs">
       <SubType>Form</SubType>
@@ -98,6 +110,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Presentation Layer\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\AddStudent.resx">
+      <DependentUpon>AddStudent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation Layer\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
@@ -116,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation Layer\Studenterror.resx">
       <DependentUpon>Studenterror.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\StudentSearch.resx">
+      <DependentUpon>StudentSearch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
