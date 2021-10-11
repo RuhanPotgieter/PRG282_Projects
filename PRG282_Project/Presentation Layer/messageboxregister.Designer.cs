@@ -31,6 +31,7 @@ namespace PRG282_Project.Presentation_Layer
         {
             this.btn_messageboxstudentadded = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.lb_Welcome = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn_messageboxstudentadded
@@ -51,11 +52,21 @@ namespace PRG282_Project.Presentation_Layer
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(101)))), ((int)(((byte)(74)))));
-            this.label1.Location = new System.Drawing.Point(31, 33);
+            this.label1.Location = new System.Drawing.Point(42, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(258, 22);
+            this.label1.Size = new System.Drawing.Size(224, 22);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Student Succesfully added";
+            this.label1.Text = "Registration Succesfull";
+            // 
+            // lb_Welcome
+            // 
+            this.lb_Welcome.AutoSize = true;
+            this.lb_Welcome.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Welcome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(101)))), ((int)(((byte)(74)))));
+            this.lb_Welcome.Location = new System.Drawing.Point(145, 31);
+            this.lb_Welcome.Name = "lb_Welcome";
+            this.lb_Welcome.Size = new System.Drawing.Size(0, 22);
+            this.lb_Welcome.TabIndex = 4;
             // 
             // messageboxregister
             // 
@@ -63,11 +74,13 @@ namespace PRG282_Project.Presentation_Layer
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.ClientSize = new System.Drawing.Size(323, 131);
+            this.Controls.Add(this.lb_Welcome);
             this.Controls.Add(this.btn_messageboxstudentadded);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "messageboxregister";
             this.Text = "messageboxregister";
+            this.Load += new System.EventHandler(this.messageboxregister_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -77,5 +90,6 @@ namespace PRG282_Project.Presentation_Layer
 
         private System.Windows.Forms.Button btn_messageboxstudentadded;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lb_Welcome;
     }
 }

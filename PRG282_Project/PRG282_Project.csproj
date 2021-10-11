@@ -47,10 +47,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BusinessLogic layer\DataHandler.cs" />
-    <Compile Include="BusinessLogic layer\Exception.cs" />
+    <Compile Include="BusinessLogic layer\customException.cs" />
     <Compile Include="BusinessLogic layer\FileHandler.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="BusinessLogic layer\Student.cs" />
     <Compile Include="Presentation Layer\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +82,12 @@
     <Compile Include="Presentation Layer\messageboxstudentadded.Designer.cs">
       <DependentUpon>messageboxstudentadded.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation Layer\Studenterror.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\Studenterror.Designer.cs">
+      <DependentUpon>Studenterror.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Presentation Layer\Register.cs">
       <SubType>Form</SubType>
@@ -106,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation Layer\Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\Studenterror.resx">
+      <DependentUpon>Studenterror.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

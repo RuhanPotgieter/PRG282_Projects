@@ -6,9 +6,13 @@ using System.Threading.Tasks;
 
 namespace PRG282_Project.BusinessLogic_layer
 {
-    class Exception
+    class customException : Exception
     {
 
+       public customException()
+        {
+            
+        }
 
     }
 }

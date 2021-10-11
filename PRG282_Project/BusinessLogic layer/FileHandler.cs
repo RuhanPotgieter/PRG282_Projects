@@ -15,7 +15,7 @@ namespace PRG282_Project.BusinessLogic_layer
             {
 
             }
-            catch (Exception)
+            catch (customException)
             {
 
                 throw;
