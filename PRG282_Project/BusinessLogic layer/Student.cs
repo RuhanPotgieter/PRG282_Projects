@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PRG282_Project.BusinessLogic_layer
 {
-    class Student
+    class Student : Interfaces.IStudent
     {
         private int studentnum;
         private string name;

@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PRG282_Project.BusinessLogic_layer
+namespace PRG282_Project.BusinessLogic_layer.Interfaces
 {
-    class DataHandler : Interfaces.IDataHandler
+    interface IDataHandler
     {
-
 
 
     }

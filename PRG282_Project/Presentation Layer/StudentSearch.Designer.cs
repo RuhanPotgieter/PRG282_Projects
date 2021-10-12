@@ -44,12 +44,14 @@ namespace PRG282_Project.Presentation_Layer
             this.txt_studentname = new System.Windows.Forms.TextBox();
             this.txt_StudentNum = new System.Windows.Forms.TextBox();
             this.searchpanel = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_Search = new System.Windows.Forms.TextBox();
             this.dgv_Studentsdetails1 = new System.Windows.Forms.DataGridView();
             this.btn_Search = new System.Windows.Forms.Button();
             this.btn_Update = new System.Windows.Forms.Button();
             this.btn_Delete = new System.Windows.Forms.Button();
+            this.pb_search = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Studentsdetails1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_search)).BeginInit();
             this.SuspendLayout();
             // 
             // coursecodepanel
@@ -200,21 +202,22 @@ namespace PRG282_Project.Presentation_Layer
             this.searchpanel.BackColor = System.Drawing.Color.White;
             this.searchpanel.Location = new System.Drawing.Point(292, 71);
             this.searchpanel.Name = "searchpanel";
-            this.searchpanel.Size = new System.Drawing.Size(200, 1);
+            this.searchpanel.Size = new System.Drawing.Size(257, 1);
             this.searchpanel.TabIndex = 25;
             // 
-            // textBox1
+            // txt_Search
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBox1.Font = new System.Drawing.Font("Arial", 10F);
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(292, 49);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 16);
-            this.textBox1.TabIndex = 24;
-            this.textBox1.Text = "Search student by student number";
+            this.txt_Search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.txt_Search.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_Search.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_Search.Font = new System.Drawing.Font("Arial", 10F);
+            this.txt_Search.ForeColor = System.Drawing.Color.White;
+            this.txt_Search.Location = new System.Drawing.Point(292, 49);
+            this.txt_Search.Name = "txt_Search";
+            this.txt_Search.Size = new System.Drawing.Size(257, 16);
+            this.txt_Search.TabIndex = 24;
+            this.txt_Search.Text = "Search student by student number";
+            this.txt_Search.Click += new System.EventHandler(this.txt_Search_Click);
             // 
             // dgv_Studentsdetails1
             // 
@@ -231,7 +234,7 @@ namespace PRG282_Project.Presentation_Layer
             this.btn_Search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Search.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.btn_Search.Location = new System.Drawing.Point(534, 45);
+            this.btn_Search.Location = new System.Drawing.Point(626, 45);
             this.btn_Search.Name = "btn_Search";
             this.btn_Search.Size = new System.Drawing.Size(135, 27);
             this.btn_Search.TabIndex = 36;
@@ -264,18 +267,30 @@ namespace PRG282_Project.Presentation_Layer
             this.btn_Delete.Text = "Delete";
             this.btn_Delete.UseVisualStyleBackColor = false;
             // 
+            // pb_search
+            // 
+            this.pb_search.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pb_search.Image = global::PRG282_Project.Properties.Resources.search1;
+            this.pb_search.Location = new System.Drawing.Point(260, 47);
+            this.pb_search.Name = "pb_search";
+            this.pb_search.Size = new System.Drawing.Size(26, 29);
+            this.pb_search.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pb_search.TabIndex = 39;
+            this.pb_search.TabStop = false;
+            // 
             // StudentSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.ClientSize = new System.Drawing.Size(800, 487);
+            this.Controls.Add(this.pb_search);
             this.Controls.Add(this.btn_Delete);
             this.Controls.Add(this.btn_Update);
             this.Controls.Add(this.btn_Search);
             this.Controls.Add(this.dgv_Studentsdetails1);
             this.Controls.Add(this.searchpanel);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_Search);
             this.Controls.Add(this.coursecodepanel);
             this.Controls.Add(this.txt_coursecode);
             this.Controls.Add(this.addresspanel);
@@ -294,6 +309,7 @@ namespace PRG282_Project.Presentation_Layer
             this.Name = "StudentSearch";
             this.Text = "StudentSearch";
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Studentsdetails1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_search)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -316,10 +332,11 @@ namespace PRG282_Project.Presentation_Layer
         private System.Windows.Forms.TextBox txt_studentname;
         private System.Windows.Forms.TextBox txt_StudentNum;
         private System.Windows.Forms.Panel searchpanel;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_Search;
         private System.Windows.Forms.DataGridView dgv_Studentsdetails1;
         private System.Windows.Forms.Button btn_Search;
         private System.Windows.Forms.Button btn_Update;
         private System.Windows.Forms.Button btn_Delete;
+        private System.Windows.Forms.PictureBox pb_search;
     }
 }

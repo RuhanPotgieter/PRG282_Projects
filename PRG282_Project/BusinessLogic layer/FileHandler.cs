@@ -5,28 +5,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 
+
 namespace PRG282_Project.BusinessLogic_layer
 {
     class FileHandler
     {
-        public static void Read()
+
+        public void registercapturer()
         {
-            try
-            {
-                Presentation_Layer.Login l = new Presentation_Layer.Login();
-                StreamReader sr = new StreamReader(@"logininfo.txt");
-                string olddate = sr.ReadLine();
-                sr.Close();
-                string[] data = new string[2];
-                data[0] = l.txt_Username.Text;
-                data[1] = l.txt_Password.Text;
+            StreamWriter sw = new StreamWriter();
 
-            }
-            catch (customException)
-            {
+            sw.WriteLine("Username:" + Presentation_Layer.Register.txt_Username.Text + "| Password:" + Presentation_Layer.Register.txt_Password.Text);
+        }
 
-                throw;
-            }
+        public void logincapturer()
+        {
 
         }
 

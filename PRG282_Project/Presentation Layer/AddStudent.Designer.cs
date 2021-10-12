@@ -75,6 +75,7 @@ namespace PRG282_Project.Presentation_Layer
             this.txt_studentname.Size = new System.Drawing.Size(200, 15);
             this.txt_studentname.TabIndex = 8;
             this.txt_studentname.Text = "First Name";
+            this.txt_studentname.Click += new System.EventHandler(this.txt_studentname_Click);
             // 
             // txt_StudentNum
             // 
@@ -88,6 +89,7 @@ namespace PRG282_Project.Presentation_Layer
             this.txt_StudentNum.Size = new System.Drawing.Size(200, 16);
             this.txt_StudentNum.TabIndex = 7;
             this.txt_StudentNum.Text = "Student Number";
+            this.txt_StudentNum.Click += new System.EventHandler(this.txt_StudentNum_Click);
             // 
             // genderpanel
             // 
@@ -116,6 +118,7 @@ namespace PRG282_Project.Presentation_Layer
             this.txt_Gender.Size = new System.Drawing.Size(200, 15);
             this.txt_Gender.TabIndex = 12;
             this.txt_Gender.Text = "Gender";
+            this.txt_Gender.Click += new System.EventHandler(this.txt_Gender_Click);
             // 
             // txt_Dateofbirth
             // 
@@ -129,6 +132,7 @@ namespace PRG282_Project.Presentation_Layer
             this.txt_Dateofbirth.Size = new System.Drawing.Size(200, 16);
             this.txt_Dateofbirth.TabIndex = 11;
             this.txt_Dateofbirth.Text = "Date of birth";
+            this.txt_Dateofbirth.Click += new System.EventHandler(this.txt_Dateofbirth_Click);
             // 
             // addresspanel
             // 
@@ -157,6 +161,7 @@ namespace PRG282_Project.Presentation_Layer
             this.txt_Address.Size = new System.Drawing.Size(200, 15);
             this.txt_Address.TabIndex = 16;
             this.txt_Address.Text = "Address";
+            this.txt_Address.Click += new System.EventHandler(this.txt_Address_Click);
             // 
             // txt_Phonenumber
             // 
@@ -170,6 +175,7 @@ namespace PRG282_Project.Presentation_Layer
             this.txt_Phonenumber.Size = new System.Drawing.Size(200, 16);
             this.txt_Phonenumber.TabIndex = 15;
             this.txt_Phonenumber.Text = "Phone Number";
+            this.txt_Phonenumber.Click += new System.EventHandler(this.txt_Phonenumber_Click);
             // 
             // coursecodepanel
             // 
@@ -190,6 +196,7 @@ namespace PRG282_Project.Presentation_Layer
             this.txt_coursecode.Size = new System.Drawing.Size(200, 15);
             this.txt_coursecode.TabIndex = 19;
             this.txt_coursecode.Text = "Module code";
+            this.txt_coursecode.Click += new System.EventHandler(this.txt_coursecode_Click);
             // 
             // btn_Addimage
             // 
