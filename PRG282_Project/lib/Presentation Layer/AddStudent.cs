@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PRG282_Project.BusinessLogic_layer;
 
 namespace PRG282_Project.Presentation_Layer
 {
@@ -283,8 +284,8 @@ namespace PRG282_Project.Presentation_Layer
 
         private void btn_AddStudent_Click(object sender, EventArgs e)
         {
-            Data_Access_Layer.QueryHandler dalqh = new Data_Access_Layer.QueryHandler();
-            dalqh.AddStudents();
+            DataHandler dhq = new DataHandler();
+            dhq.addstudentstuff();
         }
 
         private void btn_Addimage_Click(object sender, EventArgs e)
