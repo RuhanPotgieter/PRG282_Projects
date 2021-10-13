@@ -175,13 +175,13 @@ namespace PRG282_Project.Presentation_Layer
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox txt_UserName;
-        private System.Windows.Forms.TextBox txt_Password;
         private System.Windows.Forms.Panel userpanel;
         private System.Windows.Forms.Panel paswordpanel;
         private System.Windows.Forms.Button btn_Login;
         private System.Windows.Forms.Button btn_RegisterForm;
         private System.Windows.Forms.PictureBox pb_User;
         private System.Windows.Forms.PictureBox pb_Pass;
+        public System.Windows.Forms.TextBox txt_UserName;
+        public System.Windows.Forms.TextBox txt_Password;
     }
 }
