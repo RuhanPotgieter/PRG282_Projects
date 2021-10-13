@@ -6,16 +6,19 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using PRG282_Project.BusinessLogic_layer;
+using PRG282_Project.Presentation_Layer;
 
 namespace PRG282_Project.Data_Access_Layer
 {
     public class QueryHandler 
     {
         DataHandler dh = new DataHandler();
+        AddStudent ads = new AddStudent();
         DataBaseConnection dbc = new DataBaseConnection();
+        StudentSearch sst = new StudentSearch();
         public void AddStudents()
         {
-            
+
            
             string conn = Convert.ToString(dbc.con);
             using (SqlConnection con1 = new SqlConnection(conn))
@@ -23,7 +26,7 @@ namespace PRG282_Project.Data_Access_Layer
                 con1.Open();
                 SqlCommand cmd = new SqlCommand("InsertStudent", con1);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@Studentnum", dh.txt_StudentNum.Text.Trim());
+                cmd.Parameters.AddWithValue("@Studentnum", ads.txt_StudentNum.Text.Trim());
                 cmd.Parameters.AddWithValue("@Firstname", ads.txt_Firstname.Text.Trim());
                 cmd.Parameters.AddWithValue("@Surname", ads.txt_Surname.Text.Trim());
                 cmd.Parameters.AddWithValue("@DOB", ads.txt_Dateofbirth.Text.Trim());
@@ -33,7 +36,7 @@ namespace PRG282_Project.Data_Access_Layer
                 cmd.Parameters.AddWithValue("@modulecode", ads.txt_coursecode.Text.Trim());
                 cmd.Parameters.AddWithValue("@studentphoto", ads.pb_Studentimage.Image);
                 cmd.ExecuteNonQuery();
-               
+
                 reset();
 
             }
@@ -46,7 +49,7 @@ namespace PRG282_Project.Data_Access_Layer
 
         public void DeleteStudent()
         {
-            Presentation_Layer.AddStudent ads = new Presentation_Layer.AddStudent();
+           
             DataBaseConnection dbc = new DataBaseConnection();
             string conn = Convert.ToString(dbc.con);
             using (SqlConnection con1 = new SqlConnection(conn))
@@ -88,14 +91,14 @@ namespace PRG282_Project.Data_Access_Layer
                 SqlDataAdapter sda = new SqlDataAdapter("allStudent", con1);
                 DataTable dtbl = new DataTable();
                 sda.Fill(dtbl);
-                sts.dgv_Studentsdetails.DataSource = dtbl;
+                sst.dgv_Studentsdetails.DataSource = dtbl;
                 
             }
         }
 
         public void SearchStudent()
         {
-            SearchStudent sst = new SearchStudent();
+           
             DataBaseConnection dbc = new DataBaseConnection();
             string conn = Convert.ToString(dbc.con);
             using (SqlConnection con1 = new SqlConnection(conn)) 

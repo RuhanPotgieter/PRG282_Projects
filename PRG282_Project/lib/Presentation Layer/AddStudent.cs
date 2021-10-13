@@ -290,7 +290,7 @@ namespace PRG282_Project.Presentation_Layer
 
         private void btn_Addimage_Click(object sender, EventArgs e)
         {
-            Presentation_Layer.AddStudent ads = new Presentation_Layer.AddStudent();
+            AddStudent ads = new AddStudent();
             OpenFileDialog open = new OpenFileDialog();
             open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)| *.jpg; *.jpeg; *.gif; *.bmp";
             if (open.ShowDialog() == DialogResult.OK)

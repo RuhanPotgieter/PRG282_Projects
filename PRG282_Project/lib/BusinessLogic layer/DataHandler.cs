@@ -13,12 +13,13 @@ namespace PRG282_Project.BusinessLogic_layer
         public void loginstuff()
         {
             Login loginform = new Login();
-            loginform.
+            //loginform.
         }
+
         public void searchstudentstuff()
         {
             StudentSearch sts = new StudentSearch();
-            sts.
+            //sts.
         }
         public void addstudentstuff()
         {

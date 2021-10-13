@@ -73,10 +73,18 @@ namespace PRG282_Project.Presentation_Layer
 
         private void btn_Register_Click(object sender, EventArgs e)
         {
+           
+                fh.registercapturer();
 
-            fh.registercapturer();
-
+          
             
+
+            this.Hide();
+            Login reg2 = new Login();
+            reg2.FormClosed += (s, args) => this.Close();
+            reg2.Show();
+
+
         }
     }
 }

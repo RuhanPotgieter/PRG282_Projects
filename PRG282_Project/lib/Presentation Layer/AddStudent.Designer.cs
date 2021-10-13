@@ -222,6 +222,7 @@ namespace PRG282_Project.Presentation_Layer
             this.pb_Studentimage.Location = new System.Drawing.Point(275, 50);
             this.pb_Studentimage.Name = "pb_Studentimage";
             this.pb_Studentimage.Size = new System.Drawing.Size(380, 344);
+            this.pb_Studentimage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pb_Studentimage.TabIndex = 22;
             this.pb_Studentimage.TabStop = false;
             // 
