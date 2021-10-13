@@ -25,6 +25,12 @@ namespace PRG282_Project.BusinessLogic_layer
             QueryHandler qh = new QueryHandler();
             qh.AddStudents();
         }
+
+        public void PullData (int studentnum, string name, string surname, object studentimage, string dob, string gender, int phonenumber, string address, string modulecode)
+        {
+            Student Pull = new Student(studentnum,name,surname,studentimage,dob,gender,phonenumber,address,modulecode) ; 
+            
+        }
         
         
 
