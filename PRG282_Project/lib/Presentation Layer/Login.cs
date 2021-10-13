@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PRG282_Project.BusinessLogic_layer;
+
 
 namespace PRG282_Project.Presentation_Layer
 {
