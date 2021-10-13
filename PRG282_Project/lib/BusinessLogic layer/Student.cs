@@ -14,8 +14,8 @@ namespace PRG282_Project.BusinessLogic_layer
         private string name;
         private string surname;
         private object studentimage;
-        private DateTime dob;
-        private bool gender;
+        private string dob;
+        private string gender;
         private int phonenumber;
         private string address;
         private string modulecode;
@@ -25,13 +25,13 @@ namespace PRG282_Project.BusinessLogic_layer
         public string Name { get => name; set => name = value; }
         public string Surname { get => surname; set => surname = value; }
         public object Studentimage { get => studentimage; set => studentimage = value; }
-        public DateTime Dob { get => dob; set => dob = value; }
-        public bool Gender { get => gender; set => gender = value; }
+        public string Dob { get => dob; set => dob = value; }
+        public string Gender { get => gender; set => gender = value; }
         public int Phonenumber { get => phonenumber; set => phonenumber = value; }
         public string Address { get => address; set => address = value; }
         public string Modulecode { get => modulecode; set => modulecode = value; }
 
-        public Student(int studentnum, string name, string surname, object studentimage, DateTime dob, bool gender, int phonenumber, string address, string modulecode)
+        public Student(int studentnum, string name, string surname, object studentimage, string dob, string gender, int phonenumber, string address, string modulecode)
         {
             this.studentnum = studentnum;
             this.name = name;
