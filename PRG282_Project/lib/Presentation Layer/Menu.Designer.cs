@@ -47,6 +47,7 @@ namespace PRG282_Project.Presentation_Layer
             this.btn_studentaddmenu.TabIndex = 0;
             this.btn_studentaddmenu.Text = "Add student";
             this.btn_studentaddmenu.UseVisualStyleBackColor = false;
+            this.btn_studentaddmenu.Click += new System.EventHandler(this.btn_studentaddmenu_Click);
             // 
             // btn_studentsearchmenu
             // 
@@ -60,6 +61,7 @@ namespace PRG282_Project.Presentation_Layer
             this.btn_studentsearchmenu.TabIndex = 1;
             this.btn_studentsearchmenu.Text = "Search for student";
             this.btn_studentsearchmenu.UseVisualStyleBackColor = false;
+            this.btn_studentsearchmenu.Click += new System.EventHandler(this.btn_studentsearchmenu_Click);
             // 
             // pictureBox1
             // 

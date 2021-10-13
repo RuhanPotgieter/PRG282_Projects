@@ -49,7 +49,7 @@ namespace PRG282_Project.Presentation_Layer
         {
             this.Hide();
             Register reg2 = new Register();
-            
+            reg2.FormClosed += (s, args) => this.Close();
             reg2.Show();
         }
 

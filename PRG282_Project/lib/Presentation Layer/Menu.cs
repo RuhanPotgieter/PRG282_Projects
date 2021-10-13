@@ -16,5 +16,21 @@ namespace PRG282_Project.Presentation_Layer
         {
             InitializeComponent();
         }
+
+        private void btn_studentsearchmenu_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            StudentSearch reg2 = new StudentSearch();
+            reg2.FormClosed += (s, args) => this.Close();
+            reg2.Show();
+        }
+
+        private void btn_studentaddmenu_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AddStudent reg2 = new AddStudent();
+            reg2.FormClosed += (s, args) => this.Close();
+            reg2.Show();
+        }
     }
 }
