@@ -5,13 +5,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Windows.Forms;
+using PRG282_Project.Presentation_Layer;
+
+
 
 namespace PRG282_Project.lib.BusinessLogic_layer
 {
     class FileHandler : Presentation_Layer.Login
     {
-        Presentation_Layer.Login l = new Presentation_Layer.Login();
-        Presentation_Layer.Register r = new Presentation_Layer.Register();
+        
+        Login l = new Login();
+        Register r = new Register();
         public void registercapturer()
         {
 

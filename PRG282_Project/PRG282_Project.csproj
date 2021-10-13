@@ -49,10 +49,9 @@
     <Compile Include="lib\BusinessLogic layer\Capturer.cs" />
     <Compile Include="lib\BusinessLogic layer\DataHandler.cs" />
     <Compile Include="lib\BusinessLogic layer\customException.cs" />
-    <Compile Include="lib\BusinessLogic layer\FileHandler.cs" />
-    <Compile Include="lib\BusinessLogic layer\Interfaces\ICapturer.cs" />
-    <Compile Include="lib\BusinessLogic layer\Interfaces\IDataHandler.cs" />
-    <Compile Include="lib\BusinessLogic layer\Interfaces\IStudent.cs" />
+    <Compile Include="lib\BusinessLogic layer\FileHandler.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="lib\BusinessLogic layer\Student.cs" />
     <Compile Include="lib\Data Access Layer\DataBaseConnection.cs">
       <SubType>Form</SubType>

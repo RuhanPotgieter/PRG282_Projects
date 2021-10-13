@@ -298,6 +298,7 @@ namespace PRG282_Project.Presentation_Layer
                 lbl_Imagefilepath.Text = "Image: " + open.FileName;
             }
 
+
         }
     }
 }

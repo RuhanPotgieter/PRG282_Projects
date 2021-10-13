@@ -5,13 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
+using PRG282_Project.BusinessLogic_layer;
 
 namespace PRG282_Project.Data_Access_Layer
 {
-    class QueryHandler : Presentation_Layer.AddStudent
+    public class QueryHandler 
     {
-        Presentation_Layer.AddStudent ads = new Presentation_Layer.AddStudent();
-        Presentation_Layer.StudentSearch sts = new Presentation_Layer.StudentSearch();
+        DataHandler dh = new DataHandler();
         DataBaseConnection dbc = new DataBaseConnection();
         public void AddStudents()
         {
@@ -95,16 +95,17 @@ namespace PRG282_Project.Data_Access_Layer
 
         public void SearchStudent()
         {
+            SearchStudent sst = new SearchStudent();
             DataBaseConnection dbc = new DataBaseConnection();
             string conn = Convert.ToString(dbc.con);
             using (SqlConnection con1 = new SqlConnection(conn)) 
             {
-                int studnum = int.Parse(sts.txt_Search.Text);
+                int studnum = int.Parse(sst.txt_Search.Text);
                 SqlCommand cmd = new SqlCommand("SearchStudent", con1);
                 SqlDataAdapter sda = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
-                sts.dgv_Studentsdetails.DataSource = dt;
+                sst.dgv_Studentsdetails.DataSource = dt;
             }
                 
         }

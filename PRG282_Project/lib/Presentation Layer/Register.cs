@@ -16,7 +16,7 @@ namespace PRG282_Project.Presentation_Layer
         {
             InitializeComponent();
         }
-        BusinessLogic_layer.
+        lib.BusinessLogic_layer.FileHandler fh = new lib.BusinessLogic_layer.FileHandler();
 
         private void txt_UserName_Click(object sender, EventArgs e)
         {
@@ -74,10 +74,7 @@ namespace PRG282_Project.Presentation_Layer
         private void btn_Register_Click(object sender, EventArgs e)
         {
 
-            while (true)
-            {
-
-            }
+            fh.registercapturer();
 
             
         }
