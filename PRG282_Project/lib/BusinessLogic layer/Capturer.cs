@@ -20,6 +20,8 @@ namespace PRG282_Project.BusinessLogic_layer
         public string Username { get => username; set => username = value; }
         public string Password { get => password; set => password = value; }
 
+        
+
         public override string ToString()
         {
             return "Username: " + username + "| Password: " + password;

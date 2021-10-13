@@ -16,8 +16,8 @@ namespace PRG282_Project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Presentation_Layer.Login());
-            Application.Run(new Presentation_Layer.StudentSearch());
+            Application.Run(new Presentation_Layer.Login());
+            
         }
     }
 }
