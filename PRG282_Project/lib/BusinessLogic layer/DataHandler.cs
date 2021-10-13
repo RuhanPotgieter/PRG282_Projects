@@ -10,10 +10,22 @@ namespace PRG282_Project.BusinessLogic_layer
 {
     class DataHandler 
     {
-
-        Login loginform = new Login();
+        public void loginstuff()
+        {
+            Login loginform = new Login();
+            loginform.
+        }
+        public void searchstudentstuff()
+        {
+            StudentSearch sts = new StudentSearch();
+            sts.
+        }
+        public void addstudentstuff()
+        {
+            QueryHandler qh = new QueryHandler();
+            qh.AddStudents();
+        }
         
-        StudentSearch sts = new StudentSearch();
         
 
     }

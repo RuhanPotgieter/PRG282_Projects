@@ -23,7 +23,7 @@ namespace PRG282_Project.Data_Access_Layer
                 con1.Open();
                 SqlCommand cmd = new SqlCommand("InsertStudent", con1);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@Studentnum", ads.txt_StudentNum.Text.Trim());
+                cmd.Parameters.AddWithValue("@Studentnum", dh.txt_StudentNum.Text.Trim());
                 cmd.Parameters.AddWithValue("@Firstname", ads.txt_Firstname.Text.Trim());
                 cmd.Parameters.AddWithValue("@Surname", ads.txt_Surname.Text.Trim());
                 cmd.Parameters.AddWithValue("@DOB", ads.txt_Dateofbirth.Text.Trim());
