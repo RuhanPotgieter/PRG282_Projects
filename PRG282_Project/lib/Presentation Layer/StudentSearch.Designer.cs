@@ -45,12 +45,12 @@ namespace PRG282_Project.Presentation_Layer
             this.txt_StudentNum = new System.Windows.Forms.TextBox();
             this.searchpanel = new System.Windows.Forms.Panel();
             this.txt_Search = new System.Windows.Forms.TextBox();
-            this.dgv_Studentsdetails1 = new System.Windows.Forms.DataGridView();
+            this.dgv_Studentsdetails = new System.Windows.Forms.DataGridView();
             this.btn_Search = new System.Windows.Forms.Button();
             this.btn_Update = new System.Windows.Forms.Button();
             this.btn_Delete = new System.Windows.Forms.Button();
             this.pb_search = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_Studentsdetails1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Studentsdetails)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_search)).BeginInit();
             this.SuspendLayout();
             // 
@@ -219,14 +219,14 @@ namespace PRG282_Project.Presentation_Layer
             this.txt_Search.Text = "Search student by student number";
             this.txt_Search.Click += new System.EventHandler(this.txt_Search_Click);
             // 
-            // dgv_Studentsdetails1
+            // dgv_Studentsdetails
             // 
-            this.dgv_Studentsdetails1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgv_Studentsdetails1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_Studentsdetails1.Location = new System.Drawing.Point(292, 82);
-            this.dgv_Studentsdetails1.Name = "dgv_Studentsdetails1";
-            this.dgv_Studentsdetails1.Size = new System.Drawing.Size(469, 326);
-            this.dgv_Studentsdetails1.TabIndex = 35;
+            this.dgv_Studentsdetails.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgv_Studentsdetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_Studentsdetails.Location = new System.Drawing.Point(292, 82);
+            this.dgv_Studentsdetails.Name = "dgv_Studentsdetails";
+            this.dgv_Studentsdetails.Size = new System.Drawing.Size(469, 326);
+            this.dgv_Studentsdetails.TabIndex = 35;
             // 
             // btn_Search
             // 
@@ -288,7 +288,7 @@ namespace PRG282_Project.Presentation_Layer
             this.Controls.Add(this.btn_Delete);
             this.Controls.Add(this.btn_Update);
             this.Controls.Add(this.btn_Search);
-            this.Controls.Add(this.dgv_Studentsdetails1);
+            this.Controls.Add(this.dgv_Studentsdetails);
             this.Controls.Add(this.searchpanel);
             this.Controls.Add(this.txt_Search);
             this.Controls.Add(this.coursecodepanel);
@@ -308,7 +308,8 @@ namespace PRG282_Project.Presentation_Layer
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "StudentSearch";
             this.Text = "StudentSearch";
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_Studentsdetails1)).EndInit();
+            this.Load += new System.EventHandler(this.StudentSearch_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Studentsdetails)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_search)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -332,11 +333,11 @@ namespace PRG282_Project.Presentation_Layer
         private System.Windows.Forms.TextBox txt_studentname;
         private System.Windows.Forms.TextBox txt_StudentNum;
         private System.Windows.Forms.Panel searchpanel;
-        private System.Windows.Forms.TextBox txt_Search;
-        private System.Windows.Forms.DataGridView dgv_Studentsdetails1;
         private System.Windows.Forms.Button btn_Search;
         private System.Windows.Forms.Button btn_Update;
         private System.Windows.Forms.Button btn_Delete;
         private System.Windows.Forms.PictureBox pb_search;
+        public System.Windows.Forms.DataGridView dgv_Studentsdetails;
+        public System.Windows.Forms.TextBox txt_Search;
     }
 }

@@ -12,6 +12,7 @@ namespace PRG282_Project.Presentation_Layer
 {
     public partial class StudentSearch : Form
     {
+        Data_Access_Layer.QueryHandler qh = new Data_Access_Layer.QueryHandler();
         public StudentSearch()
         {
             InitializeComponent();
@@ -23,6 +24,13 @@ namespace PRG282_Project.Presentation_Layer
             pb_search.BackgroundImage = Properties.Resources.search1;
             searchpanel.BackColor = Color.FromArgb(0, 101, 74);
             txt_Search.ForeColor = Color.FromArgb(0, 101, 74);
+
+            qh.SearchStudent();
+        }
+
+        private void StudentSearch_Load(object sender, EventArgs e)
+        {
+            qh.Displaydata();
         }
     }
 }

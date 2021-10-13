@@ -46,99 +46,65 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BusinessLogic layer\Capturer.cs" />
-    <Compile Include="BusinessLogic layer\DataHandler.cs" />
-    <Compile Include="BusinessLogic layer\customException.cs" />
-    <Compile Include="BusinessLogic layer\FileHandler.cs">
+    <Compile Include="lib\BusinessLogic layer\Capturer.cs" />
+    <Compile Include="lib\BusinessLogic layer\DataHandler.cs" />
+    <Compile Include="lib\BusinessLogic layer\customException.cs" />
+    <Compile Include="lib\BusinessLogic layer\FileHandler.cs" />
+    <Compile Include="lib\BusinessLogic layer\Interfaces\ICapturer.cs" />
+    <Compile Include="lib\BusinessLogic layer\Interfaces\IDataHandler.cs" />
+    <Compile Include="lib\BusinessLogic layer\Interfaces\IStudent.cs" />
+    <Compile Include="lib\BusinessLogic layer\Student.cs" />
+    <Compile Include="lib\Data Access Layer\DataBaseConnection.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BusinessLogic layer\Interfaces\ICapturer.cs" />
-    <Compile Include="BusinessLogic layer\Interfaces\IDataHandler.cs" />
-    <Compile Include="BusinessLogic layer\Interfaces\IStudent.cs" />
-    <Compile Include="BusinessLogic layer\Student.cs" />
-    <Compile Include="Data Access Layer\DataBaseConnection.cs" />
-    <Compile Include="Data Access Layer\QueryHandler.cs" />
-    <Compile Include="Presentation Layer\Login.cs">
+    <Compile Include="lib\Data Access Layer\QueryHandler.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentation Layer\Login.Designer.cs">
+    <Compile Include="lib\Presentation Layer\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Presentation Layer\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Presentation Layer\AddStudent.cs">
+    <Compile Include="lib\Presentation Layer\AddStudent.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentation Layer\AddStudent.Designer.cs">
+    <Compile Include="lib\Presentation Layer\AddStudent.Designer.cs">
       <DependentUpon>AddStudent.cs</DependentUpon>
     </Compile>
-    <Compile Include="Presentation Layer\Menu.cs">
+    <Compile Include="lib\Presentation Layer\Menu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentation Layer\Menu.Designer.cs">
+    <Compile Include="lib\Presentation Layer\Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Presentation Layer\messageboxlogin.cs">
+    <Compile Include="lib\Presentation Layer\StudentSearch.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentation Layer\messageboxlogin.Designer.cs">
-      <DependentUpon>messageboxlogin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Presentation Layer\messageboxregister.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentation Layer\messageboxregister.Designer.cs">
-      <DependentUpon>messageboxregister.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Presentation Layer\messageboxstudentadded.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentation Layer\messageboxstudentadded.Designer.cs">
-      <DependentUpon>messageboxstudentadded.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Presentation Layer\Studenterror.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentation Layer\Studenterror.Designer.cs">
-      <DependentUpon>Studenterror.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Presentation Layer\StudentSearch.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentation Layer\StudentSearch.Designer.cs">
+    <Compile Include="lib\Presentation Layer\StudentSearch.Designer.cs">
       <DependentUpon>StudentSearch.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
-    <Compile Include="Presentation Layer\Register.cs">
+    <Compile Include="lib\Presentation Layer\Register.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentation Layer\Register.Designer.cs">
+    <Compile Include="lib\Presentation Layer\Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Presentation Layer\Login.resx">
+    <EmbeddedResource Include="lib\Presentation Layer\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation Layer\AddStudent.resx">
+    <EmbeddedResource Include="lib\Presentation Layer\AddStudent.resx">
       <DependentUpon>AddStudent.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation Layer\Menu.resx">
+    <EmbeddedResource Include="lib\Presentation Layer\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation Layer\messageboxlogin.resx">
-      <DependentUpon>messageboxlogin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentation Layer\messageboxregister.resx">
-      <DependentUpon>messageboxregister.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentation Layer\messageboxstudentadded.resx">
-      <DependentUpon>messageboxstudentadded.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentation Layer\Register.resx">
+    <EmbeddedResource Include="lib\Presentation Layer\Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation Layer\Studenterror.resx">
-      <DependentUpon>Studenterror.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentation Layer\StudentSearch.resx">
+    <EmbeddedResource Include="lib\Presentation Layer\StudentSearch.resx">
       <DependentUpon>StudentSearch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
